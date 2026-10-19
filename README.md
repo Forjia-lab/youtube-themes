@@ -66,6 +66,12 @@ palette's `magenta` for a colder theme).
   no `--yt-spec-*` variables), so a big UI change means re-inventorying the elements
   whose computed color differs from their parent's and re-mapping them to `--rs-*`.
 
+## Companion
+
+[omarchy-plugin-palette](https://github.com/Forjia-lab/omarchy-plugin-palette) puts the same
+palette in your bar — swatches of the active theme, click for every hex — for
+picking colors while you tune one of these files.
+
 ## Credits
 
 Palettes come from [omarchy](https://omarchy.org/)'s theme set — credit for the colors
