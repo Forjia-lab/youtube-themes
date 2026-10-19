@@ -1,0 +1,507 @@
+/* ============================================================
+   CATPPUCCIN FOR YOUTUBE
+   Generated from the omarchy theme "catppuccin" by gen-theme.py
+   Enhancer for YouTube -> Theme: YouTube Dark -> Custom theme: ON
+   Paste this whole block in the Custom theme box, then Save.
+   ============================================================ */
+
+html {
+  /* --- catppuccin roles --- */
+  --rs-bg: #161622;
+  --rs-deep: #101019;
+  --rs-surface: #1e1e2e;
+  --rs-hover: #313244;
+  --rs-accent: #89b4fa;
+  --rs-accent-soft: #9ec2fb;
+  --rs-fg: #cdd6f4;
+  --rs-fg-dim: #bac2de;
+  --rs-muted: #6c7086;
+  --rs-red: #f38ba8;
+  --rs-green: #a6e3a1;
+  --rs-line: color-mix(in srgb, var(--rs-fg) 12%, transparent);
+
+  /* translucent foreground tints (guides, chips, tracks) */
+  --rs-tint-6: color-mix(in srgb, var(--rs-fg) 6%, transparent);
+  --rs-tint-7: color-mix(in srgb, var(--rs-fg) 7%, transparent);
+  --rs-tint-8: color-mix(in srgb, var(--rs-fg) 8%, transparent);
+  --rs-tint-10: color-mix(in srgb, var(--rs-fg) 10%, transparent);
+  --rs-tint-14: color-mix(in srgb, var(--rs-fg) 14%, transparent);
+  --rs-tint-18: color-mix(in srgb, var(--rs-fg) 18%, transparent);
+  --rs-tint-22: color-mix(in srgb, var(--rs-fg) 22%, transparent);
+  --rs-tint-32: color-mix(in srgb, var(--rs-fg) 32%, transparent);
+  --rs-tint-40: color-mix(in srgb, var(--rs-fg) 40%, transparent);
+
+  /* legacy YouTube tokens, still used in a few spots */
+  --yt-spec-base-background: #161622;
+  --yt-spec-raised-background: #1e1e2e;
+  --yt-spec-menu-background: #1e1e2e;
+  --yt-spec-general-background-a: #161622;
+  --yt-spec-general-background-b: #161622;
+  --yt-spec-general-background-c: #101019;
+  --yt-spec-brand-background-solid: #161622;
+  --yt-spec-brand-background-primary: #161622;
+  --yt-spec-text-primary: #cdd6f4;
+  --yt-spec-text-secondary: #bac2de;
+  --yt-spec-text-disabled: #6c7086;
+  --yt-spec-icon-active-other: #cdd6f4;
+  --yt-spec-icon-inactive: #bac2de;
+  --yt-spec-call-to-action: #89b4fa;
+  --yt-spec-themed-blue: #89b4fa;
+  --yt-spec-badge-chip-background: color-mix(in srgb, var(--rs-fg) 8%, transparent);
+  --yt-spec-static-brand-red: #89b4fa;
+  color-scheme: dark;
+}
+
+/* ================= canvas ================= */
+html,
+body,
+ytd-app,
+#page-manager.ytd-app,
+ytd-page-manager {
+  background-color: var(--rs-bg) !important;
+}
+
+ytd-app > #content,
+#content.ytd-app {
+  background-color: var(--rs-bg) !important;
+  color: var(--rs-fg) !important;
+}
+
+/* top bar */
+#masthead-container,
+ytd-masthead,
+ytd-masthead #background,
+ytd-masthead #container,
+#background.ytd-masthead {
+  background-color: var(--rs-deep) !important;
+  border-bottom: 1px solid var(--rs-line) !important;
+}
+
+#skip-navigation.ytd-masthead {
+  background-color: var(--rs-surface) !important;
+  color: var(--rs-fg) !important;
+}
+
+#country-code.ytd-topbar-logo-renderer {
+  color: var(--rs-muted) !important;
+}
+
+/* ================= search box ================= */
+.ytSearchboxComponentInputBox {
+  background-color: var(--rs-surface) !important;
+  border: 1px solid var(--rs-line) !important;
+  color: var(--rs-fg) !important;
+}
+
+.ytSearchboxComponentInputBox:focus-within {
+  border-color: var(--rs-accent) !important;
+}
+
+.ytSearchboxComponentInput,
+input.yt-searchbox-input,
+.yt-searchbox-input::placeholder {
+  color: var(--rs-fg) !important;
+  caret-color: var(--rs-accent);
+}
+
+.ytSearchboxComponentSearchButton {
+  background-color: var(--rs-hover) !important;
+  border-color: var(--rs-line) !important;
+  color: var(--rs-fg) !important;
+}
+
+.ytSearchboxComponentSearchButton:hover {
+  background-color: var(--rs-accent) !important;
+  color: var(--rs-bg) !important;
+}
+
+.ytSearchboxComponentSuggestionsContainer,
+#i0.ytSearchboxComponentSuggestionsContainer {
+  background-color: var(--rs-surface) !important;
+  border: 1px solid var(--rs-line) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* mic + topbar icon buttons */
+#voice-search-button,
+ytd-topbar-menu-button-renderer .ytSpecButtonShapeNextMono {
+  background-color: var(--rs-tint-7) !important;
+  color: var(--rs-fg) !important;
+}
+
+#voice-search-button:hover {
+  background-color: var(--rs-hover) !important;
+}
+
+/* ================= guide / sidebar ================= */
+#contentContainer.tp-yt-app-drawer,
+#guide-content.ytd-app,
+ytd-guide-renderer,
+ytd-mini-guide-renderer,
+#guide-wrapper.ytd-app {
+  background-color: var(--rs-bg) !important;
+}
+
+ytd-guide-renderer #header,
+#header.ytd-guide-renderer {
+  background-color: var(--rs-surface) !important;
+  color: var(--rs-fg) !important;
+}
+
+ytd-guide-entry-renderer a,
+ytd-guide-entry-renderer .title,
+ytd-mini-guide-entry-renderer .title {
+  color: var(--rs-fg-dim) !important;
+}
+
+ytd-guide-entry-renderer:hover,
+ytd-mini-guide-entry-renderer:hover {
+  background-color: var(--rs-tint-6) !important;
+  border-radius: 10px !important;
+}
+
+ytd-guide-entry-renderer[active] .title,
+ytd-guide-entry-renderer[active] yt-icon,
+ytd-mini-guide-entry-renderer[active] .title,
+ytd-mini-guide-entry-renderer[active] yt-icon {
+  color: var(--rs-accent) !important;
+  fill: var(--rs-accent) !important;
+}
+
+#scrim.ytd-app {
+  background-color: color-mix(in srgb, var(--rs-deep) 60%, transparent) !important;
+}
+
+/* ================= filter chips ================= */
+.ytChipShapeChip {
+  border-radius: 10px !important;
+  border: 1px solid transparent !important;
+}
+
+.ytChipShapeChip.ytChipShapeInactive,
+.ytChipShapeChip.ytChipShapeInactive .ytChipShapeText {
+  background-color: var(--rs-tint-8) !important;
+  color: var(--rs-fg) !important;
+}
+
+.ytChipShapeChip.ytChipShapeInactive:hover {
+  background-color: var(--rs-hover) !important;
+}
+
+.ytChipShapeChip.ytChipShapeActive,
+.ytChipShapeChip.ytChipShapeActive .ytChipShapeText {
+  background-color: var(--rs-fg) !important;
+  color: var(--rs-bg) !important;
+}
+
+/* ================= text hierarchy ================= */
+ytd-watch-metadata,
+a.ytLockupMetadataViewModelTitle,
+.ytLockupMetadataViewModelTitle,
+a#video-title,
+#video-title.ytd-rich-grid-media,
+h3.ytd-compact-video-renderer,
+a#author-text.yt-simple-endpoint,
+#author-text span,
+h1.title,
+.ytSpecButtonShapeNextText,
+.ytSpecButtonShapeNextButtonTextContent {
+  color: var(--rs-fg) !important;
+}
+
+.ytLockupMetadataViewModelMetadata,
+ytd-watch-info-text,
+#owner-sub-count,
+#published-time-text,
+span#published-time-text,
+ytd-comment-engagement-bar,
+#contextual-info,
+span.more-button,
+#simplebox-placeholder,
+#metadata-line,
+ytd-video-meta-block,
+#description,
+#info-container #info {
+  color: var(--rs-muted) !important;
+}
+
+/* links YouTube paints in its blue */
+a.ytAttributedStringLinkCallToActionColor,
+.ytSpecButtonShapeNextCallToAction {
+  color: var(--rs-accent) !important;
+}
+
+/* ================= buttons ================= */
+.ytSpecButtonShapeNextFilled,
+a.ytSpecButtonShapeNextFilled,
+button.ytSpecButtonShapeNextFilled {
+  background-color: var(--rs-accent) !important;
+  color: var(--rs-bg) !important;
+  border: none !important;
+}
+
+.ytSpecButtonShapeNextFilled .ytSpecButtonShapeNextButtonTextContent,
+.ytSpecButtonShapeNextFilled .ytAttributedStringHost,
+.ytSpecButtonShapeNextFilled .ytAttributedStringHost * {
+  color: var(--rs-bg) !important;
+}
+
+.ytSpecButtonShapeNextFilled:hover {
+  background-color: var(--rs-accent-soft) !important;
+}
+
+.ytSpecButtonShapeNextTonal,
+button.ytSpecButtonShapeNextTonal,
+a.ytSpecButtonShapeNextTonal {
+  background-color: var(--rs-tint-10) !important;
+  color: var(--rs-fg) !important;
+}
+
+.ytSpecButtonShapeNextTonal:hover {
+  background-color: var(--rs-tint-18) !important;
+}
+
+.ytSpecButtonShapeNextOutline {
+  border-color: var(--rs-line) !important;
+  color: var(--rs-fg) !important;
+}
+
+.ytSpecButtonShapeNextOutline:hover {
+  background-color: var(--rs-tint-8) !important;
+}
+
+.contribYtLightShapeStaticWashLightSolid,
+.contribYtLightShapeStaticWashLightTonal {
+  background-color: var(--rs-tint-14) !important;
+}
+
+/* ================= cards & thumbnails ================= */
+ytd-thumbnail,
+ytd-thumbnail img,
+ytd-thumbnail #thumbnail,
+a.ytLockupViewModelContentImage,
+yt-image.ytd-thumbnail {
+  border-radius: 12px !important;
+}
+
+ytd-thumbnail:hover,
+a.ytLockupViewModelContentImage:hover {
+  box-shadow: 0 0 0 2px var(--rs-accent) !important;
+}
+
+/* duration / LIVE / special badges on thumbs */
+.ytBadgeShapeThumbnailDefault,
+.ytBadgeShapeThumbnailBadge.ytBadgeShapeThumbnailDefault {
+  background-color: color-mix(in srgb, var(--rs-deep) 85%, transparent) !important;
+  color: var(--rs-fg) !important;
+}
+
+.ytBadgeShapeThumbnailLive {
+  background-color: var(--rs-red) !important;
+  color: var(--rs-bg) !important;
+  font-weight: 600 !important;
+}
+
+.ytBadgeShapeThumbnailSpecial {
+  background-color: var(--rs-fg) !important;
+  color: var(--rs-bg) !important;
+}
+
+ytd-thumbnail-overlay-toggle-button-renderer {
+  background-color: color-mix(in srgb, var(--rs-deep) 85%, transparent) !important;
+  color: var(--rs-fg) !important;
+}
+
+ytd-badge-supported-renderer .badge-style-type-live-now {
+  background-color: var(--rs-red) !important;
+  color: var(--rs-bg) !important;
+}
+
+/* ================= watch page ================= */
+ytd-watch-metadata,
+#above-the-fold,
+#below.ytd-watch-flexy,
+#primary.ytd-watch-flexy,
+#secondary.ytd-watch-flexy,
+ytd-comments {
+  background-color: transparent !important;
+}
+
+#description-inline-expander,
+#description.ytd-watch-metadata,
+#bottom-row.ytd-watch-metadata {
+  color: var(--rs-fg-dim) !important;
+}
+
+ytd-watch-metadata #description-inline-expander {
+  border-radius: 12px !important;
+}
+
+ytd-comment-thread-renderer:hover,
+ytd-comment-view-model:hover {
+  background-color: color-mix(in srgb, var(--rs-fg) 3%, transparent) !important;
+  border-radius: 10px !important;
+}
+
+ytd-author-comment-badge-renderer {
+  background-color: var(--rs-surface) !important;
+  color: var(--rs-fg) !important;
+  border-radius: 8px !important;
+}
+
+/* ================= player ================= */
+.html5-video-player,
+.html5-video-container,
+video.video-stream {
+  background-color: #000 !important;
+}
+
+.ytp-progress-list,
+.ytp-progress-bar-container {
+  background-color: var(--rs-tint-22) !important;
+}
+
+.ytp-play-progress,
+.ytp-swatch-background-color,
+.ytp-scrubber-button {
+  background-color: var(--rs-accent) !important;
+  background-image: none !important;
+}
+
+.ytp-load-progress {
+  background: var(--rs-tint-32) !important;
+}
+
+.ytp-volume-slider-track,
+.ytp-volume-slider-handle:before {
+  background-color: var(--rs-tint-40) !important;
+}
+
+.ytp-volume-slider-handle {
+  background: var(--rs-fg) !important;
+}
+
+.ytp-autonav-toggle-button {
+  background: var(--rs-fg) !important;
+}
+
+.ytp-autonav-toggle-button[aria-checked="true"] {
+  background: var(--rs-accent) !important;
+}
+
+/* gear / quality / speed menus */
+.ytp-settings-menu,
+.ytp-panel,
+.ytp-panel-menu,
+.ytp-popup,
+.ytp-contextmenu {
+  background: var(--rs-surface) !important;
+  color: var(--rs-fg) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.65) !important;
+}
+
+.ytp-menuitem:hover,
+.ytp-menuitem:focus {
+  background: var(--rs-hover) !important;
+}
+
+.ytp-menuitem-label,
+.ytp-menuitem-content,
+.ytp-panel-title {
+  color: var(--rs-fg) !important;
+}
+
+.ytp-menuitem[aria-checked="true"] .ytp-menuitem-label {
+  color: var(--rs-accent) !important;
+}
+
+.ytp-menuitem-toggle-checkbox {
+  background: var(--rs-accent) !important;
+}
+
+.ytp-tooltip-bg {
+  background: var(--rs-surface) !important;
+}
+
+.ytp-tooltip-text,
+.ytp-tooltip-title {
+  color: var(--rs-fg) !important;
+}
+
+/* subtitles: warm wash instead of pure black */
+.caption-window {
+  background: color-mix(in srgb, var(--rs-deep) 82%, transparent) !important;
+  border-radius: 6px !important;
+}
+
+.caption-window span {
+  color: var(--rs-fg) !important;
+}
+
+/* ================= dialogs, menus, panels ================= */
+tp-yt-paper-dialog,
+ytd-popup-container #contentWrapper,
+ytd-multi-page-menu-renderer,
+ytd-menu-popup-renderer,
+ytd-engagement-panel-section-list-renderer,
+ytd-notification-topbar-button-renderer #content,
+#notification.ytd-notification-renderer {
+  background-color: var(--rs-surface) !important;
+  color: var(--rs-fg) !important;
+}
+
+tp-yt-paper-item:hover,
+ytd-menu-service-item-renderer:hover,
+ytd-compact-link-renderer:hover,
+ytd-menu-navigation-item-renderer:hover {
+  background-color: var(--rs-hover) !important;
+}
+
+/* ================= page / channel tabs ================= */
+yt-tab-shape .ytTabShapeTab,
+tp-yt-paper-tab {
+  color: var(--rs-fg-dim) !important;
+}
+
+yt-tab-shape[aria-selected="true"] .ytTabShapeTab,
+yt-tab-shape .ytTabShapeTabSelected,
+tp-yt-paper-tab[selected] {
+  color: var(--rs-fg) !important;
+}
+
+yt-tab-shape:hover .ytTabShapeTab {
+  color: var(--rs-accent) !important;
+}
+
+/* ================= scrollbars ================= */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--rs-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--rs-fg) 18%, var(--rs-bg));
+  border-radius: 6px;
+  border: 2px solid var(--rs-deep);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rs-muted);
+}
+
+/* ================= logo + selection ================= */
+ytd-logo #youtube-red-paths path,
+ytd-logo svg path[fill="#FF0000"],
+ytd-logo svg path[fill="#FF0033"] {
+  fill: var(--rs-accent) !important;
+}
+
+::selection {
+  background: var(--rs-accent);
+  color: var(--rs-bg);
+}
